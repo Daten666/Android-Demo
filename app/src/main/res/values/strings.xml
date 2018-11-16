@@ -8,4 +8,12 @@
             that is declared with optional, M and above only permissions.
         ]]>
     </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_introduction">Click the buttons below to show a camera preview or access the contacts database.\\nNote that the contacts option is only available on Android M to illustrate the use of optional, M-only permissions that are not requested on lower SDK platforms.</string>
+    <string name="show_camera">相机预览</string>
+    <string name="show_contacts">添加联系人</string>
+    <string name="permission_camera_rationale">相机预览请打开权限</string>
+    <string name="ok">OK</string>
 </resources>
