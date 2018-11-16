@@ -39,7 +39,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showCameraPreview() {
-
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.sample_content_fragment,CameraPreviewFragment.newInstance())
+                .addToBackStack("contacts")
+                .commit();
     }
 
     /**
