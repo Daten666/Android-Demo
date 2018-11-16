@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.Toast;
 
 /**
@@ -56,6 +57,8 @@ public class CameraPreviewFragment extends Fragment {
         final int displayRotation = getActivity().getWindowManager().getDefaultDisplay()
                 .getRotation();
         mPreview = new CameraPreview(getActivity(), mCamera, cameraInfo, displayRotation);
+        FrameLayout preview = root.findViewById(R.id.camera_preview);
+        preview.addView(mPreview);
         return root;
     }
 
