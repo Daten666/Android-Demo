@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">RuntimeDemo</string>
+    <string name="intro_message">
+        <![CDATA[
+            This sample shows runtime permissions available in Android M and above.
+            Display the log on screen to follow the execution.
+            If executed on an Android M device, an additional option to access contacts is shown
+            that is declared with optional, M and above only permissions.
+        ]]>
+    </string>
 </resources>
