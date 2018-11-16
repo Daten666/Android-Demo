@@ -16,4 +16,6 @@
     <string name="show_contacts">添加联系人</string>
     <string name="permission_camera_rationale">相机预览请打开权限</string>
     <string name="ok">OK</string>
+    <string name="back">返回</string>
+    <string name="camera_unavailable">相机不可用</string>
 </resources>
