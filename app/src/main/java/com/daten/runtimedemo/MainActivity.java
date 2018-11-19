@@ -65,8 +65,15 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Log.i(TAG,
                     "Contact permissions have already been granted. Displaying contact details.");
-            //showContactsDetails();  //显示联系人
+            showContactsDetails();  //显示联系人
         }
+    }
+
+    private void showContactsDetails() {
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.sample_content_fragment,ContactsFragment.newInstance())
+                .addToBackStack("contacts")
+                .commit();
     }
 
     /**
@@ -126,6 +133,10 @@ public class MainActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA},
                     REQUEST_CAMERA);
         }
+    }
+
+    public void onBackClick(View view) {
+        getSupportFragmentManager().popBackStack();
     }
 
     @Override

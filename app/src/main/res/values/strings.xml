@@ -2,16 +2,14 @@
     <string name="app_name">RuntimeDemo</string>
     <string name="intro_message">
         <![CDATA[
-            This sample shows runtime permissions available in Android M and above.
-            Display the log on screen to follow the execution.
-            If executed on an Android M device, an additional option to access contacts is shown
-            that is declared with optional, M and above only permissions.
+            动态获取权限Demo。
+            显示联系人权限按钮需要运行在安卓M以上的设备。
         ]]>
     </string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="main_introduction">Click the buttons below to show a camera preview or access the contacts database.\\nNote that the contacts option is only available on Android M to illustrate the use of optional, M-only permissions that are not requested on lower SDK platforms.</string>
+    <string name="main_introduction">单击下面的按钮预览相机或者打开联系人。</string>
     <string name="show_camera">相机预览</string>
     <string name="show_contacts">查看联系人</string>
     <string name="permission_camera_rationale">相机预览请打开权限</string>
@@ -22,4 +20,9 @@
     <string name="permision_available_camera">相机权限已获取</string>
     <string name="permissions_not_granted">权限未获取</string>
     <string name="permision_available_contacts">读取联系人权限已获取</string>
+    <string name="contacts_intro">显示设备上的联系人。\n单击“添加联系人”按钮，添加一个\"__DUMMY ENTRY\"的名字到联系人数据库。\n单击\"显示第一个联系人\"打印数据库中第一个联系人的名字。</string>
+    <string name="add_contact">添加一个联系人</string>
+    <string name="show_contact">显示联系人</string>
+    <string name="contacts_empty">联系人未读取</string>
+    <string name="contacts_string"><![CDATA[联系人总数: %1$,d\n第一个联系人:<b>%2$s</b>]]></string>
 </resources>
