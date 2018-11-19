@@ -161,14 +161,14 @@ public class MainActivity extends AppCompatActivity {
 
             }
         } else if (requestCode == REQUEST_CONTACTS) {
-            Log.i(TAG, "Received response for contact permissions request.");
+            Log.i(TAG, "接收到联系人权限获取消息。");
             if (PermissionUtil.verifyPermissions(grantResults)) {
                 // All required permissions have been granted, display contacts fragment.
                 Snackbar.make(mLayout, R.string.permision_available_contacts,
                         Snackbar.LENGTH_SHORT)
                         .show();
             } else {
-                Log.i(TAG, "Contacts permissions were NOT granted.");
+                Log.i(TAG, "联系人权限未授权。");
                 Snackbar.make(mLayout, R.string.permissions_not_granted,
                         Snackbar.LENGTH_SHORT)
                         .show();
