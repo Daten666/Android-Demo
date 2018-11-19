@@ -48,7 +48,7 @@ public class CameraPreviewFragment extends Fragment {
         }
         //相机不可用
         if (mCamera == null || cameraInfo == null) {
-            // Camera is not available, display error message
+            // 相机不可用，显示错误提示
             Toast.makeText(getActivity(), "Camera is not available.", Toast.LENGTH_SHORT).show();
             return inflater.inflate(R.layout.fragment_camera_unavailable, null);
         }

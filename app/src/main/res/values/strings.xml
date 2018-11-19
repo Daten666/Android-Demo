@@ -18,4 +18,8 @@
     <string name="ok">OK</string>
     <string name="back">返回</string>
     <string name="camera_unavailable">相机不可用</string>
+    <string name="permission_contacts_rationale">请打开联系人权限</string>
+    <string name="permision_available_camera">相机权限已获取</string>
+    <string name="permissions_not_granted">权限未获取</string>
+    <string name="permision_available_contacts">读取联系人权限已获取</string>
 </resources>
