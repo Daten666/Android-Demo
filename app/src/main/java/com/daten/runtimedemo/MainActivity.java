@@ -78,9 +78,6 @@ public class MainActivity extends AppCompatActivity {
                 || ActivityCompat.shouldShowRequestPermissionRationale(this,
                 Manifest.permission.WRITE_CONTACTS)) {
 
-            // Provide an additional rationale to the user if the permission was not granted
-            // and the user would benefit from additional context for the use of the permission.
-            // For example, if the request has been denied previously.
             Log.i(TAG,
                     "Displaying contacts permission rationale to provide additional context.");
 
@@ -163,6 +160,7 @@ public class MainActivity extends AppCompatActivity {
         } else if (requestCode == REQUEST_CONTACTS) {
             Log.i(TAG, "接收到联系人权限获取消息。");
             if (PermissionUtil.verifyPermissions(grantResults)) {
+                Log.i(TAG,"联系人权限已获取。");
                 // All required permissions have been granted, display contacts fragment.
                 Snackbar.make(mLayout, R.string.permision_available_contacts,
                         Snackbar.LENGTH_SHORT)
